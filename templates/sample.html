@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Outlet Sales Prediction </title>
+</head>
+
+<body style="background-color: hsla(37, 48%, 46%, 0.526);">
+
+    <h2>  Outlet Salse Prediction </h2>
+    <form method="post" action="/prediction">
+        <br><br>
+        <label> Item_Weight </label>
+        <input type = "text" name = "Item_Weight">
+        </select>
+        &emsp;
+        &emsp;
+        
+        <label> Item_Fat_Content </label>
+        <select name = "Item_Fat_Content">
+            <option value = "Low Fat">Low Fat</option>
+            <option value = "Regular">Regular</option>
+        <select>
+        &emsp;
+        &emsp;
+
+        <br><br>
+        <label> Item_MRP </label>
+        <input type = "text" name = "Item_MRP">
+        </select>
+        &emsp;
+        &emsp;
+
+        <label> Outlet_Establishment_Year </label>
+        <input type = "text" name = "Outlet_Establishment_Year">
+        </select>
+        &emsp;
+        &emsp;
+
+        <br><br>
+
+        <label> Outlet_Size </label>
+        <select name = "Outlet_Size">
+            <option value = "Small">Small</option>
+            <option value = "Medium">Medium</option>
+            <option value = "High">High</option>
+        <select>
+        &emsp;
+        &emsp;
+
+        <label> Item_Visibility </label>
+        <input type = "text" name = "Item_Visibility">
+        </select>
+        &emsp;
+        &emsp;
+        <br><br>
+
+        <label> Outlet_Location_Type </label>
+        <select name = "Outlet_Location_Type">
+            <option value = "Tier 1">Tier 1</option>
+            <option value = "Tier 2">Tier 2</option>
+            <option value = "Tier 3">Tier 3</option>
+        <select>
+        &emsp;
+        &emsp;
+
+        <label> Item_Type </label>
+        <select name = "Item_Type">
+            <option value = "Baking Goods">Baking Goods</option>
+            <option value = "Breads">Breads</option>
+            <option value = "Breakfast">Breakfast</option>
+            <option value = "Canned">Canned</option>
+            <option value = "Dairy">Dairy</option>
+            <option value = "Frozen Foods">Frozen Foods</option>
+            <option value = "Fruits and Vegetables">Fruits and Vegetables</option>
+            <option value = "Hard Drinks">Hard Drinks</option>
+            <option value = "Health and Hygiene">Health and Hygiene</option>
+            <option value = "Household">Household</option>
+            <option value = "Meat">Meat</option>
+            <option value = "Others">Others</option>
+            <option value = "Seafood">Seafood</option>
+            <option value = "Snack Foods">Snack Foods</option>
+            <option value = "Soft Drinks">Soft Drinks</option>
+            <option value = "Starchy Foods">Starchy Foods</option>
+        <select>
+        &emsp;
+        &emsp;
+        <br><br>
+
+
+        <label> Outlet_Identifier </label>
+        <select name = "Outlet_Identifier">
+            <option value = "OUT010">OUT010</option>
+            <option value = "OUT013">OUT013</option>
+            <option value = "OUT017">OUT017</option>
+            <option value = "OUT018">OUT018</option>
+            <option value = "OUT019">OUT019</option>
+            <option value = "OUT027">OUT027</option>
+            <option value = "OUT035">OUT035</option>
+            <option value = "OUT045">OUT045</option>
+            <option value = "OUT046">OUT046</option>
+            <option value = "OUT049">OUT049</option>
+        <select>
+        &emsp;
+        &emsp;
+
+        <label> Outlet_Type </label>
+        <select name = "Outlet_Type">
+            <option value = "Grocery Store">Grocery Store</option>
+            <option value = "Supermarket Type1">Supermarket Type1</option>
+            <option value = "Supermarket Type2">Supermarket Type2</option>
+            <option value = "Supermarket Type3">Supermarket Type3</option>
+        <select>
+
+        <br>
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+        <br>
+        <p> Total Outlet Sales will be <b> {{ prediction }} /- Rs.</b> Only </p>
+
+              <p><b>Thank You....!!!</b></p>
+
+    </form>
+    
+</body>
+</html>
